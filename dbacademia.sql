@@ -21,6 +21,14 @@ bairro varchar(100),
 cidade varchar(50),
 estado varchar(100));
 
+create table tbprodutos(
+codigo int,
+descricao varchar(150),
+valor decimal(9,2),
+dataentrada date,
+horaentraa time,
+quantiadade decimal(9,2));
+
 create table tbusuarios(
 codigo int,
 nome varchar(20),
@@ -32,3 +40,4 @@ show tables;
 -- visualizando a estrutura das tabelas
 desc tbfuncionarios;
 desc tbusuarios;
+desc tbprodutos;
